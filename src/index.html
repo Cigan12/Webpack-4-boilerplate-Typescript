@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack 4 Typescript boilerplate</title>
-    <link
-      rel="stylesheet"
-      href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Webpack 4 Typescript boilerplate</title>
+        <link
+            rel="stylesheet"
+            href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+        />
+    </head>
 
-  <body>
-    <h1 class="center">Hello, world! It works!</h1>
-    <h2 class="center">
-      If u want to Change your Preproceesor check out the readme!
-    </h2>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-  </body>
+    <body>
+        <ul>
+            <li>
+                1. Программа запрашивает у пользователя число N. Затем
+                генерирует строку из случайных символов длиной N. Случайные
+                символы в данном случае - это любые символы латинского алфавита
+                (кроме символов 'C', 'P', 'S' и 'X' - т.е. этих символов в
+                строке быть не должно), цифры, а также символы '+', '-', '_',
+                '$' и '~'. Сгенерированная строка выводится на экран.
+            </li>
+            <li>
+                2. Далее программа запрашивает у пользователя один символ.
+                Заменяет все буквы в сгенерированной на шаге 1 строке на этот
+                символ.
+            </li>
+            <li>
+                3. Запрашивает второй символ. Заменяет все цифры в
+                сгенерированной на шаге 2 строке на второй символ. Выводит
+                получившуюся строку.
+            </li>
+            <li>
+                4. Выводит количество повторов первого символа, количество
+                повторов второго символа, а также количество символов, которые
+                не были заменены.
+            </li>
+        </ul>
+        <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    </body>
 </html>

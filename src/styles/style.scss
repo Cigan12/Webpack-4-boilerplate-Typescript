@@ -1,4 +1,9 @@
-@import '/node_modules/normalize.css/normalize.css';
+@import "/node_modules/normalize.css/normalize.css";
 
-@import 'modules/variables';
-@import 'modules/base'
+ul {
+    max-width: 50%;
+    list-style-type: none;
+    li {
+        padding-top: 20px;
+    }
+}
